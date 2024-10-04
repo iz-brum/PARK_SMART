@@ -3,7 +3,7 @@
         <span>&#9776;</span> <!-- Ícone do menu hamburguer -->
     </div>
     <ul class="nav-links">
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="cadastro_cliente.php">Cadastrar Cliente</a></li>
         <li><a href="buscar_cliente.php">Consultar Cliente</a></li>
         <li><a href="fluxo_do_dia.php">Fluxo Diário</a></li>
