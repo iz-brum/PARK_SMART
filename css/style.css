@@ -1,0 +1,207 @@
+/* Importando uma fonte elegante do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Adiciona rolagem */
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+header h1 {
+    color: #fff; /* Defina a cor branca */
+    font-size: 32px; /* Ajuste o tamanho */
+    font-weight: 700; /* Ajuste o peso da fonte */
+    margin: 0; /* Remova margens se necessário */
+    padding: 0; /* Ajuste o padding */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white; /* Define a cor branca para o ícone */
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Posiciona o ícone no canto superior direito */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h1 {
+    color: #4CAF50;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.vagas-disponiveis {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Formulário - ajustes gerais */
+form {
+    background-color: white;
+    padding: 20px 30px;
+    max-width: 600px;
+    margin: 20px auto; /* Centraliza e adiciona margem */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: stretch; /* Garante que os elementos ocupem toda a largura */
+}
+
+/* Rótulos alinhados à esquerda */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Inputs com largura total */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding e a largura sejam ajustados corretamente */
+}
+
+/* Botão com estilo responsivo */
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para as informações do cliente */
+.cliente-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.cliente-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cliente-info strong {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+
+/* Responsividade */
+@media (max-width: 1080px) {
+    header {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none; /* Esconde o menu por padrão em telas pequenas */
+        flex-direction: column; /* Deixa os itens um abaixo do outro quando o menu estiver ativo */
+        gap: 0;
+    }
+
+    nav ul.active {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Distribui os itens em 3 colunas */
+        justify-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento entre os itens quando o menu estiver aberto */
+    }
+
+    .menu-hamburguer {
+        display: block; /* Mostra o botão hamburguer */
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    h2, h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
